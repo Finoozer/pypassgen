@@ -128,3 +128,7 @@ dmypy.json
 .idea/
 
 *.ps1
+
+metadata.yml
+
+VERSION

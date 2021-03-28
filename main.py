@@ -1,27 +1,14 @@
 import secrets
-import pathlib
-import sys
+from wordlist import wl
 from dearpygui.core import *
 from dearpygui.simple import *
 from pyautogui import size
 import pyperclip
 
-wl = getattr(sys, "_MEIPASS", pathlib.Path(__file__).resolve().parent) / pathlib.Path("data/wordlist.txt")
 pwds = []
 
 
 def generate_pwd():
-    try:
-        wordlist = open(file=wl).read().splitlines()
-    except IOError:
-        if does_item_exist('err_win'):
-            delete_item('err_win')
-        with window(name='err_win', label='Error', no_resize=True, autosize=True, no_move=True,
-                    x_pos=0, y_pos=0):
-            add_dummy()
-            add_text(name='Cannot open wordlist.txt file.\nYou can try running app in\nADMIN mode.',
-                     color=[250, 25, 25, 200])
-        return
     # Get options
     num_of_pwds = get_value(name='##n_of_pwds')
     num_of_wrds = get_value(name='##n_of_wrds')
@@ -35,7 +22,7 @@ def generate_pwd():
     for _ in range(num_of_pwds):
         pwd = []
         for _ in range(num_of_wrds):
-            pwd.append(secrets.choice(wordlist))
+            pwd.append(secrets.choice(wl))
         if inc_letter:
             pwd[0] = pwd[0].capitalize()
         if inc_num:
