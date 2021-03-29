@@ -9,12 +9,21 @@ Whether you want to register a new account or change your current password on so
 
 PyPassGen (**PPG**) is aiming to improve upon the mainstream password creation logic. It was inspired by [xkcd #936](https://xkcd.com/936/).
 ![xkcd #936](https://imgs.xkcd.com/comics/password_strength.png)
+
 Many people overuse the same weak password all over the internet. There are also many people who bite on the password logic suggested by social media platforms and such. These can be overly complicated and therefore overused, since the user can be misled and think that such a password is harder to obtain by a malicious attack on given website. 
 
 If you decided to register on a website using one of the PPG generated passwords, I highly recommend writing it on a paper and keep it somewhere safe. Writing passwords on a piece of paper looks like something your grandparents would do, but is actually the safest way to store passwords. 
 Alternatively you can use password managers, i.e. [Bitwarden](https://bitwarden.com/) (the best option imo), [1password](https://1password.com/), [Dashlane](https://www.dashlane.com/) or [Lastpass](https://www.lastpass.com/), 
 
-### Antivirus' false-positives
+### Download
+There are two versions of PPG:
+1. [Single-Exec](https://github.com/Finoozer/pypassgen/releases/download/v1.0.0/PyPassGen.exe)
+    * Single executable file
+    * Start of app takes approx. 5 sec
+2. [Portable-Dir](https://github.com/Finoozer/pypassgen/releases/download/v1.0.0/PyPassGen.zip)
+    * Zip-file \[shortcut, \[app data and executable\]\]
+    * Take almost no time to start
+#### Antivirus' false-positives
 As this micro-app isn't signed, you can get false-positives with some AVs. For now, you can check the validity either by going through the source code or have a look at [VirusTotal](https://www.virustotal.com/gui/file/9c7af53f3c4393fa787c4c64fc8f66f68e55c155a42834116d6ca020105d81db/detection).
 
 ### Licensing
