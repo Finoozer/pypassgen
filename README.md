@@ -12,6 +12,9 @@ PyPassGen (**PPG**) is aiming to improve upon the mainstream password creation l
 
 Many people overuse the same weak password all over the internet. There are also many people who bite on the password logic suggested by social media platforms and such. These can be overly complicated and therefore overused, since the user can be misled and think that such a password is harder to obtain by a malicious attack on given website. 
 
+![ppg_img1](docs/img2.png)
+![ppg_img1](docs/img1.png)
+
 If you decided to register on a website using one of the PPG generated passwords, I highly recommend writing it on a paper and keep it somewhere safe. Writing passwords on a piece of paper looks like something your grandparents would do, but is actually the safest way to store passwords. 
 Alternatively you can use password managers, i.e. [Bitwarden](https://bitwarden.com/) (the best option imo), [1password](https://1password.com/), [Dashlane](https://www.dashlane.com/) or [Lastpass](https://www.lastpass.com/), 
 
